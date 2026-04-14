@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project1</title>
+    <title>project1</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="case-study.css">
     <link rel="stylesheet" href="theme.css">
@@ -26,41 +26,44 @@
     </nav>
 </header>
 
-<!-- Project Hero Section - Two Column Layout Like Image 2 -->
 <section class="project-hero">
     <div class="project-hero-content">
         <div class="project-info">
-            <h1 class="project-title">Creation of a School system Management Prototype in Figma</h1>
+            <h1 class="project-title">AI Intern – After-Sales Assistant System</h1>
 
             <p class="project-description">
-                A collaborative prototype website, developed in Figma as part of the "Skill Integration" course and managed with Jira, sought to streamline team assignment and management for educators. The project addressed common challenges faced by teachers by designing an intuitive user interface facilitating scheduling, communication, and progress tracking, while also incorporating access for students, clients, and administrators. The prototype aimed to improve efficiency and user experience in team-based learning environments.
+                This project is part of my AI internship at Ahooga Bike, where I am designing and developing a complete AI-powered after-sales assistant system from scratch. The system is built to improve customer support and streamline internal processes by combining intelligent search, structured data retrieval, and AI-generated responses.
 
+                Using a modern architecture with FastAPI, Azure OpenAI, and Azure AI Search, I implemented a Retrieval-Augmented Generation (RAG) pipeline that allows the assistant to retrieve relevant information from manuals, troubleshooting documents, and business data before generating accurate responses. This ensures the system provides reliable, context-aware support rather than generic AI answers.
+
+                Due to company policy, a public live demo is not available.
             </p>
 
-            <a href="https://www.figma.com/design/6MK75jd9kkfBlR47gV4451/LST2-Prototype?node-id=164-517&p=f&t=d1fPI2EM4y59Ie6j-0" class="preview-button">Live Site Preview</a>
+            <a class="preview-button">Case Study (Coming Soon)</a>
 
             <div class="project-meta">
                 <div class="meta-col">
-                    <h3 class="meta-label">Client</h3>
-                    <p class="meta-value">Lecturer</p>
+                    <h3 class="meta-label">Duration</h3>
+                    <p class="meta-value">Feb 2026 – May 2026</p>
                 </div>
 
                 <div class="meta-col">
                     <h3 class="meta-label">Tools</h3>
-                    <p class="meta-value">Figma, jira, clockify</p>
+                    <p class="meta-value">
+                        FastAPI, Azure OpenAI, Azure AI Search, Python, React, Docker, Odoo API, Power Automate
+                    </p>
                 </div>
             </div>
         </div>
 
         <div class="project-hero-image">
             <div class="image-frame">
-                <img src="images/oneskill.png" alt="Subscription Management Platform">
+                <img src="images/ahooga.png" alt="Ahooga AI Internship Project">
             </div>
         </div>
     </div>
 </section>
 
-<!-- The Goal Section -->
 <section class="content-section" id="the-goal">
     <div class="case-container">
         <div class="section-icon">
@@ -72,18 +75,17 @@
 
         <h2 class="section-title">The Goal:</h2>
         <p class="section-description">
-            To design and develop an intuitive and efficient prototype website that streamlines the process of team management, scheduling, and communication for educators, students, and administrators. The project aims to address common challenges faced by educators by providing a user-friendly interface that enhances collaboration, simplifies workflows, and improves overall efficiency in educational and training environments.
+            The goal of this internship project is to help improve Ahooga’s after-sales process by developing an AI-powered assistant that can support customer interactions and internal operations. The focus is on making support faster, more consistent, and more efficient by using intelligent chat-based solutions connected to structured business knowledge.
         </p>
 
         <div class="showcase-wrapper">
-            <img src="images/goal1.png" alt="Platform Dashboard" class="showcase-image">
+            <img src="images/goal1.png" alt="Ahooga project goal" class="showcase-image">
         </div>
     </div>
 
     <div class="section-number">1</div>
 </section>
 
-<!-- The Challenge Section -->
 <section class="content-section" id="the-challenge">
     <div class="case-container">
         <div class="section-icon">
@@ -96,18 +98,60 @@
 
         <h2 class="section-title">The Challenge:</h2>
         <p class="section-description">
-            The project design prioritized ease of management for the instructor and accessibility for users. Initial challenges included acclimating to software tools such as Jira and Figma, as well as integrating new, unfamiliar team members into the collaborative workflow, which constituted a significant portion of the project's early stages.
+            One of the main challenges is designing an AI solution that is both useful in a real business environment and aligned with company workflows. This includes working with structured knowledge sources, making responses relevant and reliable, and ensuring the assistant can support both customer-facing and internal use cases without exposing sensitive business information.
         </p>
 
         <div class="showcase-wrapper">
-            <img src="images/challenge1.png" alt="Platform Features" class="showcase-image">
+            <img src="images/challenge1.png" alt="Ahooga project challenge" class="showcase-image">
         </div>
     </div>
 
     <div class="section-number">2</div>
 </section>
 
-<!-- The Result Section -->
+<section class="content-section" id="architecture">
+    <div class="case-container">
+        <div class="section-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 8H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 16H12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <h2 class="section-title">The Architecture:</h2>
+        <p class="section-description">
+            I designed a modular AI system for aftersales support, focused on delivering reliable, product-specific answers rather than generic chatbot responses. The architecture separates logic, retrieval, and data ingestion layers to maintain strict control over how answers are generated.
+            <br><br>
+            To eliminate hallucinations and ensure accuracy, I implemented a Retrieval-Augmented Generation (RAG) workflow. The system does not generate answers freely — it first retrieves validated technical content (manuals, troubleshooting guides, and structured ticket cases), then generates responses strictly based on that context.
+            <br><br>
+            A key challenge was handling noisy and unstructured support tickets. To address this, I introduced a preprocessing layer that extracts structured “cases” from raw tickets and prepares them for validation before ingestion. This prevents low-quality or irrelevant data from degrading AI performance.
+        </p>
+
+        <div class="showcase-wrapper architecture-box">
+            <div class="architecture-flow">
+                <div class="arch-node">React Frontend</div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-node">FastAPI Logic Layer</div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-row">
+                    <div class="arch-node">Azure OpenAI</div>
+                    <div class="arch-node">Azure AI Search</div>
+                </div>
+                <div class="arch-arrow">↑</div>
+                <div class="arch-node">Docs + Tickets Ingestion Pipeline</div>
+                <div class="arch-arrow">↑</div>
+                <div class="arch-node">Ticket Cleaning / Validation Layer</div>
+                <div class="arch-arrow">↑</div>
+                <div class="arch-node">Odoo API / Business Data</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-number">3</div>
+</section>
+
 <section class="content-section" id="the-result">
     <div class="case-container">
         <div class="section-icon">
@@ -116,25 +160,25 @@
             </svg>
         </div>
 
-        <h2 class="section-title">The Result</h2>
+        <h2 class="section-title">Current Progress:</h2>
         <p class="section-description">
-            The successful completion of our prototype, addressing pertinent teacher needs and resolving identified issues, signifies a pivotal step towards realizing its potential as a functional application. This group project underscored a crucial lesson: the limitations of individual effort in achieving complex goals. The collaborative environment fostered not only the development of a viable solution, encompassing intuitive scheduling, communication, and progress tracking for teachers, students, clients, and administrators, but also facilitated a practical understanding and mastery of Jira. The project's success is a testament to the power of collective expertise and the indispensable nature of teamwork in navigating challenges and achieving impactful outcomes. I also helped the team in improving lots of areas in the project prototype.
+            The system is currently under active development and already demonstrates a working architecture combining FastAPI, Azure OpenAI, and Azure AI Search.
+
+            Key components such as document ingestion, vector search, and AI response generation have been successfully implemented. This project has given me hands-on experience in building real-world AI systems, integrating external APIs, and designing scalable backend architectures for business use cases.
         </p>
 
         <div class="showcase-wrapper">
-            <img src="images/result1.png" alt="Platform Features" class="showcase-image">
+            <img src="images/result1.png" alt="Ahooga project progress" class="showcase-image">
         </div>
     </div>
 
-    <div class="section-number">3</div>
+    <div class="section-number">4</div>
 </section>
 
 <div class="after-projects" id="get">
     <div class="footer-container">
-        <!-- Profile Section -->
         <div class="profile-section">
             <div class="profile-image">
-                <!-- Replace with your profile image -->
                 <img src="images/bro.webp" alt="Profile" width="100" height="100">
             </div>
             <div class="verified-badge">
@@ -145,13 +189,11 @@
             </div>
         </div>
 
-        <!-- Hero Text Section -->
         <div class="hero-text">
             <h1>Get in touch</h1>
             <p>Feel free to contact me anytime — I’m excited to connect, answer your questions, and discuss how we can work together to achieve great things. You can find my video editing on Tiktok</p>
         </div>
 
-        <!-- Contact Buttons -->
         <div class="contact-buttons">
             <p class="contact-button">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -159,7 +201,7 @@
                 </svg>
                 +32 484 20 90 20
             </p>
-            <a href="mailto:your.email@example.com" class="contact-button">
+            <a href="mailto:paschalfrancisifewulu@gmail.com" class="contact-button">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                 </svg>
@@ -167,7 +209,6 @@
             </a>
         </div>
 
-        <!-- Social Icons -->
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/paschal-ifewulu10/" class="social-icon">
                 <i class="fa-brands fa-linkedin fa-lg" style="color: #f3f4f7;"></i>
@@ -177,7 +218,6 @@
             </a>
         </div>
 
-        <!-- Brand Footer -->
         <div class="brand-footer">
             <div class="brand-logo">
                 <div class="logo">PORTFOLIO<span class="logo-star">*</span></div>
@@ -185,6 +225,7 @@
         </div>
     </div>
 </div>
+
 <script src="theme.js"></script>
 <script src="script.js"></script>
 </body>

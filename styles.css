@@ -1255,3 +1255,38 @@ hr {
 .menu-toggle {
     z-index: 1001 !important;
 }
+
+.architecture-box {
+    padding: 40px 24px;
+}
+
+.architecture-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+}
+
+.arch-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.arch-node {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 80, 80, 0.35);
+    border-radius: 14px;
+    padding: 14px 22px;
+    font-weight: 600;
+    min-width: 220px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+.arch-arrow {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ff6b6b;
+}
